@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/base.css" type="text/css">
+	<link rel="stylesheet" href="../css/main.css" type="text/css"> 
+	<link rel="stylesheet" href="../css/layout.css" type="text/css"> 
+	<script src="../js/jquery_1.11.3.min.js"></script>
+	<script src="../js/main.js "></script>
+    <style>
+        .classify{border-bottom: 2px solid #ddd;font-size: 14px;}
+    	.classify div{height:30px;padding-top:13px;padding-bottom: 13px;}
+      .classify em,.classify input{font-style: normal;display: inline-block;}
+    	.phone_list dl{width:296px;height:491px;float:left;position:relative;border-right:1px solid #ddd;border-bottom: 1px solid #ddd;overflow: hidden;}
+    	.phone_list dd{margin-top: 50px;}
+    	.phone_list dt{padding-top: 30px;}
+    	.phone_list dt a img{width:300px;height:300px;}
+    	.phone_list h3,.phone_list p{color: #333;font-size: 14px;line-height: 25px;text-align: center;}
+    	.phone_lsit h3{outline: 0;}
+    	.phone_lsit h3:hover{color:#ef4222;}
+    	.phone_list p{color:#999;}
+    	.phone_list span{display: block;color:#ef4222;text-align: center;font-size: 18px;}
+    	.phone_list span a{font-size:13px;color:#ef4222;display: block;width:122px;height:37px;background:url(../images/base/spirite1.png) -393px -413px no-repeat;text-indent: -999px;margin:0 auto;}
+    	.phone_list div{position:absolute;bottom:-111px;}
+    	.phone_list .mask{width:100%;height:111px;background:#ef4222;position:absolute;bottom:-111px;opacity: .9;filter:alpha(opacity=90);}
+    	.phone_list .mask p{color:#fff;font-size: 14px;line-height: 48px;}
+    	.phone_list .mask a.view{display: block;width:124px;text-indent:-9999px;height:37px;margin:0 auto;line-height: 37px;background:url(../images/base/spirite.png) -391px -414px;}
+    	.flag1{background:#fff url(../images/parts/flag2.png) no-repeat;position:absolute;left:0;top:20px;display:inline-block;width:42px;height:90px;outline: none;border:0;margin:0;padding:0;}
+    	.pages{width:40%;height:69px;padding:20px 0;margin:10px auto 25px;}
+    	.phone_list:after{clear: both;height:0;overflow: hidden;display: block;content: "";}
+    	.pages span{display: inline-block;color:#aaa;cursor:pointer;border:1px solid #aaa;text-align: center;padding:0 5px;margin:5px;}
+    </style>
+</head>
+<body>
+	
+		<div class="top">
+		    <div  class="ask">
+		    	<div class="online">
+		    		<a href="#"></a>
+		    		<span><a href="#">在线服务</a></span>
+		    	</div>
+		    	<div class="help">
+		    		<a href="#"></a>
+		    		<span><a href="#">帮助中心</a></span>
+		    	</div>
+		    	<div class="backtop">
+		    		<a href="#"></a>
+		    		<span><a href="#">返回顶部</a></span>
+		    	</div>
+		    </div>
+			<a class="logo lf" href="#"></a>
+			<div class="login"><a href="login.html">你好，请登录</a><span>|</span><a href="html/register.html">注册</a><a class="cart_0" href="#">购物车<b id="cartnum">(0)</b></a></div>
+			<div class="top_nav rf">
+				<ul>
+					<li><a href="../index.html">首页</a></li>
+					<li class="phone"><a href="#">手机</a>
+                       <div>
+                       	<ul>
+                       	    <li><h3><a href="#">最新</a></h3></li>
+                       		<li><a href="#">金立M6</a></li>
+                       		<li><a href="#">金立M6</a></li>
+                       		<li><a href="#">金立M6Plus</a></li>
+                       		<li><a href="#">金立M6Plus</a></li>
+                       	</ul>
+                       	<ul>
+                       	    <li><h3><a href="#">M系列</a></h3></li>
+                       		<li><a href="#">金立大金刚</a></li>
+                       		<li><a href="#">金立大金刚</a></li>
+                       		<li><a href="#">金立大金刚</a></li>
+                       		<li><a href="#">金立大金刚</a></li>
+                       	</ul>
+                       	<ul>
+                       	    <li><h3><a href="#">S系列</a></h3></li>
+                       		<li><a href="#">金立S5</a></li>
+                       		<li><a href="#">金立S5</a></li>
+                       		<li><a href="#">金立S5</a></li>
+                       		
+                       	</ul>
+                       	<ul>
+                       	    <li><h3><a href="#">金刚系列</a></h3></li>
+                       		<li><a href="#">金刚全网通(32GB+128GB)</a></li>
+                       		<li><a href="#">金刚全网通(32GB+128GB)</a></li>
+                       		<li><a href="#">金刚全网通(32GB+128GB)</a></li>
+                       		<li><a href="#">金刚全网通(32GB+128GB)</a></li>
+                       	</ul>
+                       	<ul>
+                       	    <li><h3><a href="#">天鉴系列</a></h3></li>
+                       		<li><a href="#">天鉴W900S(32GB+64GB)</a></li>
+                       		<li><a href="#">天鉴W900S(32GB+64GB)</a></li>
+                       		<li><a href="#">天鉴W900S(32GB+64GB)</a></li>
+                       		<li><a href="#">天鉴W900S(32GB+64GB)</a></li>
+                       	</ul>
+                       		<ul>
+                       	    <li><h3><a href="#">F系列</a></h3></li>
+                       		<li><a href="#">金立F110公开版</a></li>
+                       		<li><a href="#">金立F110公开版</a></li>
+                       		<li><a href="#">金立F110公开版</a></li>
+                       		<li><a href="#">金立F110公开版</a></li>
+                       	</ul>
+                       </div>
+					</li>
+					<li><a href="#">配件</a></li>
+					<li><a href="#">服务</a></li>
+					<li><a href="#">下载</a></li>
+					<li><a href="#">社区</a></li>
+					<li><a href="#">amigoOS</a></li>
+					<form class="rf" action=""><input class="txt" type="text" placeholder="输入搜索内容"/><input type="button" id="btn"/></form>
+				</ul>
+			</div>
+		</div>
+	<div class="wrap">
+		<a href="#"><img src="../images/main/2.jpg"></a>
+		<div class="classify">
+			<div><span>手机分类：</span><input type="checkbox"><em>全部</em><input type="checkbox">智能手机<input type="checkbox"><em>功能手机</em></div>
+			<div><span>手机外观：</span><input type="checkbox">全部<input type="checkbox">触屏<input type="checkbox"><em>直板</em><input type="checkbox" value="翻盖"><em>翻盖</em></div>
+			<div><span>手机系列：</span><input type="checkbox" value="全部"><em>全部</em><input type="checkbox" value="M系列"><em>M系列</em><input type="checkbox" value="S系列"><em>S系列</em><input type="checkbox" value="天鉴系列"><em>天鉴系列</em>
+			<input type="checkbox" value="金刚系列"><em>金刚系列</em><input type="checkbox" value="F系列"><em>F系列</em><input type="checkbox" value="其他系列"><em>其他系列</em></div>
+			<div><span>排序方式：</span><span>上架时间</span><span>价格</span><span>销量</span></div>
+		</div>
+		<div class="phone_list">
+		
+		</div>
+        <div class="pages">
+        	
+        </div>
+	</div>
+	<script>
+		$.get("../js/phone.json", function(data) {
+				//分页
+               
+               // 每页显示12个
+               var pagelength=12;
+               //总数为
+               var total=data.length;
+               //获得页数
+               var pagenum=Math.ceil(total/pagelength);
+               // 显示某页的数据
+               function create(n){
+               	var str="";
+				for(var i=(n-1)*12;i<Math.min(total,n*12);i++){
+                  str+="<dl class=''><dt><em class='"+data[i].dl_class+"'></em><a href='detail.html?"+data[i].pId+"'><img src='../images/phone/"+data[i].img+"'></a></dt><dd><h3>"+data[i].phone_name+"</h3><p>"+data[i].function+"</p><span class='"+data[i].pclass+"'>"+data[i].price+"</span></dd><div class='"+data[i].mask_class+"'><p>"+data[i].mask_p+"</p><a class='"+data[i].mask_aClass+"' href='detail.html?"+data[i].pId+"'></a></div></dl>"
+
+				
+               $(".phone_list").html(str);
+
+                  	$("dl").mouseover(function() {
+		
+				$(this).find(".mask").stop().animate({bottom:'0'});
+					});
+				$("dl").mouseout(function() {
+					$(this).find(".mask").stop().animate({bottom:"-111px"})
+				});
+				$("dl").find("span:not(.pclass)").html("<a href='detail.html?"+data[i].pId+"'>查看详情</a>")
+               //dynamic()
+           }
+              }
+				//载入页面自动加载第一页
+				create(1)
+				// 生成按钮
+				var str1="";
+				for(var i=1;i<pagenum+1;i++){
+					str1+="<span class='b'>"+i+"</span>"
+				}
+					
+				$(".pages").html("<span class='a'>第一页</span><span class='a'>上一页</span>"+str1+"<span class='a'>下一页</span><span class='a'>末页</span>")
+
+                 //点击进入相应页码 
+                    var n=1 ;
+                  $(".pages span:lt(2)").css("visibility","hidden");
+                   $(".pages span:eq(2)").css("border","none")
+                 $(".pages span").click(function(){
+                 
+                 	if($(this).html()=="第一页"){
+                 		var $This=$(this);
+                       create(1);
+                       n=1;
+                       judge($This);
+
+                 	}
+                 	else if($(this).html()=="末页"){
+                 		var $This=$(this);
+                 		create(pagenum);
+                 		n=pagenum;
+                 		judge($This);
+                 		
+                 	}
+                     else if($(this).html()=="上一页"){
+                     	var $This=$(this);
+                     	create(n-1)
+                         n--;
+                         judge($This);
+                       // if($(".pages :nth-child(n+2)").hasClass('b')){
+                       // $(".pages :nth-child(n+2)").css("border","none").siblings("span:not(.a)").css("border","1px solid #aaa")};
+                     }else if($(this).html()=="下一页"){
+                     	var $This=$(this);
+                     	create(n+1);
+                         n++;
+                         judge($This);
+                       //  if($(".pages :nth-child(n+2)").hasClass('b')){
+                       // $(".pages :nth-child(n+2)").css("border","none").siblings("span:not(.a)").css("border","1px solid #aaa")
+                     //}
+                     }
+                     else{
+                     	var $This=$(this);
+                     	create($(this).html());
+                     	n=$(this).html();
+                     	$(this).css("border","none").siblings("span:not(.a)").css("border","1px solid #aaa");
+                      judge($This);
+                       
+                    }	
+                 })
+                 
+                 //判断是否是第一页或最后一页
+                 function judge($This){
+                 	 if(n==1){$(".pages span:lt(2)").css("visibility","hidden");
+                     $(".pages span:gt(5)").css("visibility","visible")
+                  }
+                   else if(n==pagenum){$(".pages span:gt(5)").css("visibility","hidden");
+                    $(".pages span:lt(2)").css("visibility","visible")
+                }else{$(".pages span:gt(5)").css("visibility","visible");
+                    $(".pages span:lt(2)").css("visibility","visible")};
+                 }
+
+                //dynamic()        
+              //function dynamic(){
+           
+			;
+              	//}
+               
+		});
+		
+			
+		
+	</script>
+</body>
+</html>

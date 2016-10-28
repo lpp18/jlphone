@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="../css/base.css" type="text/css" rel="stylesheet">
+    <link href="../css/main.css" type="text/css" rel="stylesheet">
+    <link href="../css/register.css" type="text/css" rel="stylesheet">
+    <title>登录页面</title>
+    <script src="../js/jquery_1.11.3.min.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <style>
+      input.auto{width:12px;height:12px;float:left;margin-top:4px;}
+      a.rf{margin:0;}
+      .sub input{margin-top:30px;padding-top:1px;}
+    </style>
+</head>
+<body>
+ <div id="resgi">
+     <a class="logo" href="#"></a>
+     <div class="line"></div>
+   <div id="register">
+       <a href="#" class="pics"><img src="../images/main/res.png"></a>
+      <form method="get" action="../index.html">
+          <h2 class="title">欢迎登录</h2>
+          <div class="int">
+              <label for="username">登录名：</label>
+              <input type="text" id="username" class="required">
+              <p></p>
+          </div>
+          <div class="int">
+              <label for="password">密码：</label>
+              <input type="password" id="password" class="required">
+              <p></p>
+          </div>
+        <div>
+          <input class="auto" type="checkbox" id="checkbox"><span class="lf">两周内自动登录</span><a class="rf" href="#">忘记密码？</a>
+        </div>
+          <div class="sub">
+              <input type="submit" id="send" value="登录" >
+          </div>
+          <div class="line1"></div>
+          <p>还没有账号？<a href="register.html">免费注册></a></p>
+      </form>
+   </div>
+ </div>
+  <script>
+
+          $("#username").focus(function(){
+            $(this).parent().find("p").attr("class","onnormal").html("请输入登录名、邮箱账户或手机号登录");
+          })
+          $("#username").blur(function(){$(this).parent().find("p").html("")})
+     
+          $("form").submit(function(){
+            var $Username=$.cookie("username");
+            var $Password=$.cookie("password");
+            console.log($Username,$Password)
+            if($("#username").val()!=$Username){
+              $("#username").parent().find("p").attr("class","onError").html("用户名或密码有误");
+             return false;
+            }
+            else if($("#password").val()!=$Password){
+              $("#password").parent().find("p").attr("class","onError").html("用户名或密码有误");
+             return false;
+            }else{
+                //var Checked=$("#checkbox").prop("checked");
+                            if(Checked==true){
+                              $.cookie("username",$("#username").val(),{path:"/",expires:14})
+                              $.cookie("password",$("#password").val(),{path:"/",expires:14})
+                            }
+                            window.location.href="../index.html"
+
+            }
+            
+            
+            //判断复选框状态
+            
+            //存cookie
+           
+          })
+          //勾选复选框存cookie
+          $("#checkbox").click(function(){
+            //$.cookie("chioce","checked",{path:"/",expires:14})
+          })
+          // $(document).ready(function(){
+          //    var Checked=$.cookie("chioce");
+          //    if(Checked){
+          //    $("#username").val($.cookie("username"));
+          //    $("#password").val($.cookie("password"));
+          //     window.location.href="../index.html";
+          //    }
+         //})
+  </script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="../css/base.css" type="text/css" rel="stylesheet">
+    <link href="../css/main.css" type="text/css" rel="stylesheet">
+    <link href="../css/register.css" type="text/css" rel="stylesheet">
+   
+    <title>注册页面</title>
+    <script src="../js/jquery_1.11.3.min.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    
+</head>
+<body>
+ <div id="resgi">
+     <a class="logo" href="#"></a>
+     <div class="line"></div>
+   <div id="register">
+       <a href="#" class="pics"><img src="../images/main/res.png"></a>
+      <form method="get" action="register1.html">
+          <h2 class="title">欢迎注册</h2>
+          <div class="int">
+              <label for="username">用户名：</label>
+              <input type="text" id="username" class="required">
+              <p></p>
+          </div>
+          <div class="int">
+              <label for="password">密码：</label>
+              <input type="password" id="password" class="required">
+              <p></p>
+          </div>
+          <div class="int">
+              <label for="password1">确认密码：</label>
+              <input type="password" id="password1" class="required">
+              <p></p>
+          </div>
+          <div class="val">
+              <label for="validate">验证码：</label>
+              <input type="text" id="validate" class="required"><span class="vnum"></span>
+              <a class="cge">换一张</a>
+              <p></p>
+          </div>
+          <div class="sub">
+              <input type="checkbox" name="pro" id="pro"><span>我已阅读并同意</span><a href="http://shop.gionee.com/clause.shtml">网站服务条款</a>
+              <input type="submit" id="send" value="立即注册" >
+          </div>
+          <p><span>已有账户？</span><a href="login.html">直接登录</a></p>
+      </form>
+   </div>
+ </div>
+  <script>
+      $(document).ready(function(){
+          //生成四位随机验证码;
+            creat();
+          $(".cge").click(function(){
+              creat();
+          });
+          
+         
+          //为表单添加失去焦点事件
+          //1是否存在相同那个用户名(存cookie)
+          //不验证是否为空
+          //正确的话末尾添加绿色标识，错误添加红色标识
+          //错误的话添加红色文字1密码 长度验证 2用户名长度验证
+
+          //得到焦点事件
+          //一律添加指示文字
+
+          
+         $("form :input").focus(function(){
+           var $parent=$(this).parent();
+           if($(this).is("#username")){
+            
+            $parent.find("p").attr("class","onNormal").html("3-15个字符组合可使用字母、数字、汉字或组合")
+           }
+            if($(this).is("#password")){
+               $parent.find("p").attr("class","onNormal").html("6-30个字符，推荐使用字母、数字和符号的组合")
+            }
+            if($(this).is("#password1")){
+               $parent.find("p").attr("class","onNormal").html("请再次输入密码")
+            }
+            if($(this).is("#validate")){
+               $parent.find("p").attr("class","onNormal").html("请输入右边图片中的字符")
+            }
+
+         })
+
+
+
+          $("form :input").blur(function(){
+
+                 
+            var $parent=$(this).parent();
+            //先清空标识符及提示内容
+            $parent.find(".onSuccess").remove();
+           $parent.find("p").html("")
+            var $tips=$(this).parent().find("p");
+              if($(this).is("#username")){
+                  var username=$.cookie("username");
+                  if(this.value==username){ 
+                    $tips.attr("class","onError").html("用户名已存在")}
+                  else if(this.value.length<3&&this.value!=""){
+                     $tips.attr("class","onError").html("用户名长度不够")
+                  }else if(this.value.length>15){
+                    $tips.attr("class","onError").html("用户名长度大于15")
+                  }
+                  else if(this.value!=""&&!/[A-Za-z0-9\u4E00-\u9FA5]{3,15}/.test(this.value)){
+                       $tips.attr("class","onError").html("用户名不能包含特殊字符")
+                  }else{
+                       $parent.append('<span class="onSuccess"></span>')
+                       
+                  }
+              }
+              if($(this).is("#password")){
+                   if(this.value!=""&&this.value.length<6){
+                     $tips.attr("class","onError").html("密码长度不够")
+                  }else if(this.value.length>30){
+                    $tips.attr("class","onError").html("密码是长度大于30")
+                  }else{
+                       $parent.append('<span class="onSuccess"></span>')
+                  }
+              }
+              if($(this).is("#password1")){
+                if(this.value!=$("#password").val()&&this.value!=""){
+                  $tips.attr("class","onError").html("两次输入密码不一致")
+                }else{
+                       $parent.append('<span class="onSuccess"></span>')
+                  }
+              }
+              if($(this).is("#validate")){
+    
+                if(this.value!=""&&this.value!=$(".vnum").html()){
+                  $tips.attr("class","onError").html("验证码不正确！")
+                }
+              }
+              //判断是否为空，为空的话则不添加绿色标识
+              if(this.value==""){$parent.find(".onSuccess").remove();
+                               }
+          });
+
+          // 提交事件
+          $("#send").click(function(event) {
+                   $("form :input").trigger('blur');
+                   var len=$("form .onError").length;
+                   if(len){
+
+                    return false;
+                   }
+                 else if(!$("#pro").is(":checked")){
+                  return false;
+                 }
+                 else if($("#username").val()==""){
+            
+            $("#username").parent().find("p").attr("class","onError").html("用户名不能为空");
+            return false
+           }
+            else if($("#password").val()==""){
+               $("#password").parent().find("p").attr("class","onError").html("密码不能为空");
+               return false
+            }
+            else if($("#password1").val()==""){
+               $("#password1").parent().find("p").attr("class","onError").html("请再次输入密码");
+               return false
+            }
+            else if($("#validate").val()==""){
+               $("#validate").parent().find("p").attr("class","onError").html("验证码不能为空");
+               return false
+            }
+              // var obj={};
+              // var num=0;
+              // obj["username"]={num:$("#username").val()}
+              //  obj["password"]={num:$("#password").val()}
+              $.cookie("username",$("#username").val(),{expires:14,path:"/"})
+              $.cookie("password",$("#password").val(),{expires:14,path:"/"})
+                // $.cookie(obj)
+                      });
+                   
+          function creat(){
+              var str="";
+              for(var i=0;i<4;i++){
+                  var a=Math.floor(Math.random()*10);
+                  str+=a;
+              }
+              $(".vnum").html(str);
+          }
+
+
+      })
+  </script>
+</body>
+</html>

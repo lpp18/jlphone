@@ -1,0 +1,226 @@
+body{font:12px/1.5 Tahoma,"Hiragino Sans GB","Microsoft YaHei",arial,simsun,sans-serif;
+}
+.wrap{width:1190px;margin:0 auto;height:auto;overflow: hidden;}
+/******顶部导航******/
+/*右边固定窗口*/
+ .ask{width:78px;height:205px;position:fixed;right:0;top:130px;
+ 	background:#fff;border:1px solid #ddd;}
+
+ .ask a{display:block;}
+  .ask div{width:78px;height:68px;text-align:center;float:left;}
+  .ask div>a{width:30px;height:30px;margin:6px auto 0;}
+  .ask .online>a{background:url(../images/base/ui_service.png) left top no-repeat;}
+  .ask .online>a:hover{background:url(../images/base/ui_service.png) left -30px;}
+  .ask .help>a{background:url(../images/base/ui_service.png) -32px top no-repeat;}
+  .ask .help>a:hover{background:url(../images/base/ui_service.png) -32px -30px;}
+  .ask .backtop>a{background:url(../images/base/ui_service.png) -62px top no-repeat;}
+  .ask .backtop>a:hover{background:url(../images/base/ui_service.png) -62px -30px;}
+  .ask div span{line-height:28px;}
+ .ask .help,.ask .online{border-bottom: 1px solid #ddd;}
+.top{width:1190px;height:110px;top:0;z-index:90;margin:0 auto;
+	position:fixed;left:0;top:0;right:0;bottom:0;
+	border-bottom: 2px solid #ddd;background-color: #fff;opacity:.9;}
+
+.logo{display:block;width:200px;height:50px;
+	margin-top:25px;
+	background:url(../images/base/spirite.png) left top no-repeat;}
+.login{float:right;line-height: 20px;margin-top:10px;
+	margin-bottom:15px;}
+.login a,.login span{color:#9f9f9f;margin-left:5px;margin-right:5px;}
+.login a:hover{color:#ef4222;}
+.login .cart_0{margin-left:10px;margin-right:10px;}
+.top_nav{width:850px;border-bottom: 1px solid #fff;}
+.top_nav>ul>li{float:left;}
+.top_nav>ul>li>a{display: block;padding:10px 20px 10px 20px;color:black;
+	line-height:40px; font-size: 16px;}
+.top_nav>ul>li>a:hover{background-color:#FF6800;}
+.top_nav form{border:1px solid #999;width:162px;height:28px;margin-top:15px;}
+.top_nav input{border:none;height:28px;}
+.top_nav .txt{float:left;width:120px;line-height: 28px;padding-left:10px;}
+.top_nav #btn{background:#fff url(../images/base/spirite.png) -231px 2px;width:30px;}
+/*手机下拉*/
+/*.phone:hover.phone div{display:block;}*/
+.phone div{height:200px;position:absolute;top:110px;left:-35px;width:1223px;
+	padding-left: 20px;padding-right:20px;background:#fff;display: none;
+	filter:alpha(opacity=50);opacity:.9;margin-top:-3px;}
+.phone ul{width:203px;float:left;}
+.phone ul li h3 a{font-size:17px;line-height:80px;font-weight:bold;height:60px;}
+.phone ul li a{display:inline-block;color:#999;
+	font: 15px/30px "Microsoft YaHei";}
+
+
+/*****轮播图****/
+#loop{width:100%;height:462px;overflow:hidden;margin-top:110px;position:relative;}
+#loop .pics li{float:left;width:100%;height:420px;
+			}
+#loop .pics a {
+				display: block;
+				width: 100%;
+				height: 420px;
+				overflow: hidden;
+				background: url(images/main/1.jpg) no-repeat center center;
+			}
+#loop .pics{height:420px;}
+#loop:hover #next{display:block;}
+#loop:hover #prev{display:block;}
+.opt{overflow: hidden;width:160px;margin:0 auto;}
+#prev,#next{height:72px;width:41px;position:absolute;display:none;}
+#prev{top:300px;background:url(../images/base/spirite.png) -300px -575px;left:0;top:170px;}
+#next{background:url(../images/base/spirite.png) -340px -575px;right:0;top:170px}
+#loop .opt a.cur,
+			#loop .opt a:hover {
+				background:url(../images/base/spirite.png) -209px -28px;
+			}
+#loop .opt{
+	border-top:10px solid transparent;
+	border-bottom:10px solid transparent;
+			margin: 0 auto;
+			
+			}
+#loop .opt a {
+	width:22px;margin-right:10px;cursor:pointer;
+	height:22px;background:url(../images/base/spirite.png) -245px -28px;
+				float: left;
+				opacity: 0.7;
+				filter: alpha(opacity=70);
+			}			
+.pics:after{
+		content:"";
+        clear: both;
+       overflow: hidden;
+       height:0;
+       display:block;
+	}
+/*选购手机.精美配件.热销产品*/
+.mid_nav{width:100%;overflow: hidden;}
+.mid_nav li{width:33%;float:left;}
+.mid_nav i{display: inline-block;width:170px;height:90px;margin-top:55px;cursor:pointer;}
+.mid_nav .mobile i{background:url(../images/base/spirite.png) left -170px;}
+.mid_nav .accessories i{background:url(../images/base/spirite.png) 0 -319px;}
+.mid_nav .sale i{background:url(../images/base/spirite.png) -347px -170px;}
+.mid_nav .mobile i:hover{background:url(../images/base/spirite.png) -171px -170px;}
+.mid_nav .accessories i:hover{background:url(../images/base/spirite.png) -171px -319px;}
+.mid_nav .sale i:hover{background:url(../images/base/spirite.png) -348px -316px;}
+/*图片滑动区*/
+.slide_pics{position:relative;height:560px;}
+.slide_pics li{position:absolute;}
+.slide_pics li a img{position:absolute;}
+.slide_pics li>img{position:absolute;z-index:5;left:313px;}
+.slide_pics .fir{left:525px;width:313px;height:560px;}
+.slide_pics .fou>img{display:none;}
+.slide_pics .sec{left:350px;width:313px;height:560px;}
+.slide_pics .thr{left:175px;width:313px;height:560px;}
+.slide_pics .fou{width:488px;height:560px;}
+/*精品手机*/
+.boutique{height:auto;overflow: visible;height:607px;background:#ddd;width:100%;padding-left: 36px;}
+
+ .boutique .phones>li{float:right;}
+ .boutique .phones>li>a{display:inline-block;font-size: 14px;line-height: 57px;margin-right: 30px;}
+.boutique .phones>li.last:hover a{border:1px solid #ef4222;}
+.boutique .phones>li.fir{float:left;}
+.boutique .phones>li.fir>a{width:488px;line-height:57px;color:#ef4222;font-size:24px;}
+ .boutique .phones>li.last>a{text-indent:3px;border:1px solid #aaa;line-height:26px;margin-top: 15px;width:72px;}
+  .boutique .phones>li.last i{display:inline-block;margin-left:5px;border-left:4px solid #888;
+  	border-top: 4px solid transparent;
+  	border-bottom: 4px solid transparent;border-right: 4px solid transparent;}
+  .boutique .phones>li:hover i{border-left:4px solid #ef4222;}
+ .boutique .phones>li>a:hover{color:#ef4222;}
+  .boutique>.phones{float:right;position:relative;width:1263px;}
+  .boutique .phones>li>div{width:1190px;position:absolute;top:57px;left:0;margin:0;background:#ddd;border-top: 15px solid transparent;}
+  .boutique .phones>li>div.jp{height:550px;overflow: hidden;border:none;}
+  .boutique .phones>li div div{position: absolute;}
+  .boutique .phones>li div .pic1{left:0;top:0;}
+.boutique .phones>li div .pj1{left:0;top:0;z-index:0;height:275px;width:488px;}
+  .boutique .phones>li div .pic2{left:489px;top:0;width:350px;height:275px;z-index: 0;}
+  .boutique .phones>li div .pic3{left:840px;top:0;width:350px;height:275px;z-index: 0;}
+  .boutique .phones>li div .pic4{left:489px;top:275px;width:350px;height:275px;z-index: 0;}
+  .boutique .phones>li div .pic5{left:840px;top:275px;width:350px;height:275px;z-index: 0;}
+  .boutique .phones>li div .pj{left:350px;}
+    .boutique .phones>li div .pic6{left:0;top:275px;width:350px;height:275px;z-index: 0;}
+
+   .phones>li>div.jp{display: block;}
+   .phones>li>div{display:none;margin-top:20px;}
+
+ 
+  .bord{width:488px;height:3px;background-color: #ef4222;position:absolute;bottom: 0;}
+  /*超级续航*/
+  .super_p,.super_s,.super_f,.super_t,.jp{height:550px;}
+
+  .phones li dl{float:left;text-align:center;margin-right: 3px;overflow:hidden;width:216px;height:500px;padding:20px 17px;background:#fff;}
+  .phones li dd h3 a{color:#000;}
+ 
+   .phones li dd p, .super_p dd h3{border-bottom: 1px solid #ddd;}
+  .phones li dd p a{color:#aaa;}
+  .phones li dd>a{color:#ef4222;}
+  .phones li dl a{line-height: 47px;font-size: 16px;}
+   .phones li dd p a{line-height: 35px;}
+   /*精美配件*/
+   /*热销产品*/
+
+    .jp{position: relative;width:1190px;height:552px;margin:0 auto;}
+    .hot{width:100%;overflow: hidden;height:552px;background: #ddd;margin:auto;margin-top:30px;position: relative;}
+    .hot:after{height: 0;content:"";clear:both;overflow: hidden;display: block;visibility: hidden;}
+     .jp{position: absolute;overflow: hidden;left:0;top:0;bottom:0;right:0;}
+     .jp div{position: absolute;}
+     .jp .pic1{left:0;top:0;width:350px;height:275px;}
+     .jp .pic2{left:350px;top:0;width:488px;height:551px;}
+     .jp .pic3{left:838px;top:0;width:350px;height:275px;z-index: 0}
+     .jp .pic4{left:0;top:275px;width:350px;height:275px;z-index: 0}
+     .jp .pic5{left:838px;top:275px;width:350px;height:275px;z-index: 0}
+/*footer*/
+.footer{width:100%;overflow: hidden;clear:both;}
+.footer .wrap>a{float:left;width:140px;margin-right:151px;margin-top:30px;margin-bottom: 10px;}
+.footer .wrap>a:hover span{color:#ef4222;}
+.footer .wrap>a span{font-size:16px;line-height: 20px;color:#777;float:left;margin-left: 10px;}
+.footer .wrap>a i{display:inline-block;width:46px;height:46px;float:left;}
+.footer .wrap>a i.i_guarantee{background:url(../images/base/spirite.png) left -62px; }
+.footer .wrap>a i.i_promise{background:url(../images/base/spirite.png) -46px -62px; }
+.footer .wrap>a i.i_free{background:url(../images/base/spirite.png) -92px -62px; }
+.footer .wrap>a i.i_after{background:url(../images/base/spirite.png) -138px -62px; }
+
+.line2{width:100%;height:0;border-top: 1px solid #ddd;margin-bottom: 30px;margin-top:30px;}
+.footer .after{overflow: hidden;}
+.footer .after ul{float:left;width:214px;}
+.footer .after li p{color:#777;font:16px/33px "Microsoft YaHei"}
+.footer .after li a{color:#777;font-size: 12px;line-height: 33px;}
+.footer .after li a:hover{color:#ef4222;}
+.footer .after li p:hover{color:#ef4222;}
+.footer .after i{display: inline-block;width:23px;height:23px;margin-top: 5px;float:left; background:url(../images/base/spirite.png)}
+.footer .after .i_tencent{ background-position:-404px -66px; }
+.footer .after .i_QQ{background-position: -428px -66px;}
+.footer .after i.i_sina{background-position: -378px -66px;}
+.footer .after .i_tencent:hover{background-position: -404px -91px;}
+.footer .after .i_QQ:hover{background-position: -428px -91px;}
+.footer .after .i_sina:hover{background-position: -378px -91px;}
+.footer .scan i{width:95px;height:95px;background-position:-280px 0; float:none;} 
+.footer .scan p{color:#777;text-indent: 5px;}
+/*bottom*/
+.wraps,.wraps1{width:100%;background-color:#474747;padding-top: 20px;padding-bottom: 20px;}
+.wraps1{background: #ddd;overflow: hidden;}
+.bottom{color:#999;}
+.licence a{margin-left: 10px;}
+.b_under{position: relative;width:90px;height:14px;display: inline-block;line-height: 14px;}
+.b_under:hover.b_under i{border-top:0;border-bottom:4px solid #ddd;border-right:4px solid #474747;
+	border-left:4px solid #474747;}
+.b_under i{border-top:4px solid #ddd;border-right:4px solid #474747;border-left:4px solid #474747;
+	display:inline-block;}
+.b_under em{position: absolute;left:0;display: none;}
+
+.v_line{margin-left: 5px;margin-right: 5px;}
+.bottom em{font-style: normal;}
+.bottom div{overflow: hidden;}
+.bottom div p,.bottom div a{float:left;}
+
+.bottom p{line-height: 46px;height: 46px;}
+.bottom .lit{display: inline-block;height: 46px;margin-bottom: -20px;margin-left: 30px;}
+.bottom p img{display: inline-block;margin-top: 5px;}
+.bottom a{color:#999;}
+.bottom a:hover{color:#fff;}
+.bottom div .en{position:absolute;left:0;display: none;}
+.bottom div .plus{background:url(../images/base/spirite.png) -464px -65px;display:inline-block;width: 10px;height: 10px; }
+.bottom div .lan{position: relative;display: inline-block;}
+.bottom div .lan:hover .plus{background:url(../images/base/spirite.png) -454px -65px}
+/*.b_under em{position: absolute;}*/
+
+
+.limit{border:none;color:red;background: #ddd;font-size:10px;}

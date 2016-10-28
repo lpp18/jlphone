@@ -1,0 +1,42 @@
+.wrap_carts{width:1190px;margin:0 auto;margin-top:40px;height:auto;overflow: hidden;background: #f1f1f1;}
+div.top{position:static;}
+.wraps2{width:100%;background: #fff;}
+body{background: #F1F1F1;}
+
+.cart_title div{width:330px;float: right;margin-top:-50px;}
+.cart_title div p span{width:110px;display: inline-block;}
+.cart_title div p span.fir{text-indent: -30px;}
+.cart_title div p span.sec{text-indent: -20px;}
+.cart_title div p.img{width:280px;height:27px;background: url(../images/base/spirite.png) left -488px;margin-left:-15px;}
+.cart_title h2 span{display:inline-block;width:37px;height:32px;background: url(../images/base/spirite.png) -453px -76px;margin-top: 16px;}
+.cart_title h2{font-size: 24px;color:#333;font-weight: normal;line-height: 61px;text-indent: 10px;}
+
+table{width:100%;padding:30px;background: #fff;border:none;font-size: 14px;}
+tbody tr{height:100px;}
+
+tbody span{line-height: 90px;}
+tbody input{margin-top:;}
+tbody td{text-align: center;}
+tbody td.fir{width:50%;}
+tbody td.fir span{margin-left: -50%;}
+tbody td.d_price{width:10%;}
+tbody td.calc{width:23%;}
+tbody td.t_price{width:10%;}
+tbody td.del{width:7%;color:#f00;cursor: pointer;}
+tbody td.calc span{cursor: pointer;}
+tbody td.calc .sub{margin-left: 30%}
+tbody td.calc span,tbody td.calc input{width:30px;line-height:26px;text-align:center;display: inline-block;height:24px;border:1px solid #ddd;}
+tbody td.calc input{width:50px;}
+table tr td{font-weight: normal;}
+table tr.title{line-height: 48px;background-color: #f5f5f5;}
+table tr.title th{font-weight: normal;text-align:center;}
+table tr th.goods{text-align: left;text-indent:  20px;}
+table tr img{width:80px;height:80px;float: left;margin-top:0px;}
+.go_calc{font-size:12px;color:#fff;text-align:center;line-height:25px;cursor: pointer;
+	display: inline-block;width:80px;height:25px;background:url(../images/base/newucspirite.png) -270px 0;}
+.go_calc:hover{background:url(../images/base/newucspirite.png) -350px 0;}
+.total_calc{width:250px;height:50px;float:right;}
+.total_calc span{display: inline-block;width:130px;text-align: center;}
+
+
+

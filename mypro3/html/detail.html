@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>详情页</title>
+	<link rel="stylesheet" href="../css/base.css" type="text/css">
+	<link rel="stylesheet" href="../css/main.css" type="text/css"> 
+
+	 <link href="../css/detail.css" type="text/css" rel="stylesheet">
+	<script src="../js/jquery_1.11.3.min.js"></script>
+	<script src="../js/main.js "></script>
+	<script src="../js/jquery.cookie.js"></script>
+   <style>
+   	.login .mycount{color:red;}
+   </style>
+</head>
+<body>
+	
+		<div class="top">
+		    <div  class="ask">
+		    	<div class="online">
+		    		<a href="#"></a>
+		    		<span><a href="#">在线服务</a></span>
+		    	</div>
+		    	<div class="help">
+		    		<a href="#"></a>
+		    		<span><a href="#">帮助中心</a></span>
+		    	</div>
+		    	<div class="backtop">
+		    		<a href="#"></a>
+		    		<span><a href="#">返回顶部</a></span>
+		    	</div>
+		    </div>
+			<a class="logo lf" href="#"></a>
+			<div class="login"><a class="hello" href="html/login.html">你好，请登录</a><span>|</span><a class="resg" href="html/register.html">注册</a><a class="cart_0" href="#">购物车<b id="cartnum">(0)</b></a></div>
+			<div class="top_nav rf">
+				<ul>
+					<li><a href="../index.html">首页</a></li>
+					<li class="phone"><a href="../html/phone.html">手机</a>
+					</li>
+					<li><a href="#">配件</a></li>
+					<li><a href="#">服务</a></li>
+					<li><a href="#">下载</a></li>
+					<li><a href="#">社区</a></li>
+					<li><a href="#">amigoOS</a></li>
+					<form class="rf" action=""><input class="txt" type="text" placeholder="输入搜索内容"/><input type="button" id="btn"/></form>
+				</ul>
+			</div>
+		</div>
+   <div class="wraps1">
+	    <div class="detail">
+	    	<div class="show_pic">
+	    	  	<div class="b_pics">
+	    	  	    <img src="../images/detail/b5.jpg" alt="">
+	                <img src="../images/detail/b4.jpg" alt="">
+	                <img src="../images/detail/b3.jpg" alt="">
+	                <img src="../images/detail/b2.jpg" alt="">
+                	<img src="../images/detail/b1.jpg" alt="">
+		    	  	<div class="pic_shot"></div>
+		    	</div>
+                <ul class="s_pics">
+	                <li><img src="../images/detail/s1.jpg" alt=""></li>
+	                <li><img src="../images/detail/s2.jpg" alt=""></li>
+	                <li><img src="../images/detail/s3.jpg" alt=""></li>
+	                <li><img src="../images/detail/s4.jpg" alt=""></li>
+                	<li><img src="../images/detail/s5.jpg" alt=""></li>
+
+                </ul>	 
+                <div class="big_pics">
+		    		<img src="../images/detail/b5.jpg" alt="">
+	                <img src="../images/detail/b4.jpg" alt="">
+	                <img src="../images/detail/b3.jpg" alt="">
+	                <img src="../images/detail/b2.jpg" alt="">
+                	<img src="../images/detail/b1.jpg" alt="">
+	    	  </div>   	  	
+	    	</div>
+	    	
+	    	<div class="go_buy">
+	    		
+	    		
+	    	</div>
+	    </div>
+   </div>
+	<div class="footer clear">
+	  <div class="wrap">
+		<a href="#">
+			<i class="i_guarantee"></i>
+			<span>7天<br/>退货保障</span>
+		</a>
+		<a href="#">
+			<i class="i_promise"></i>
+			<span>30天<br/>退货承诺</span>
+		</a>
+		<a href="#">
+			<i class="i_free"></i>
+			<span>99元起<br/>全场免运费</span>
+		</a>
+		<a href="#">
+			<i class="i_after"></i>
+			<span>579家<br/>售后服务点</span>
+		</a>
+	 </div>
+		<div class=line2></div>
+      <div class="wrap after">
+      	<ul>
+      		<li><p>关于金立</p></li>
+      		<li><a href="">企业荣誉</a></li>
+      		<li><a href="">金立体验店</a></li>
+      		<li><a href="">代理商专区</a></li>
+      		<li><a href="">加入金立</a></li>
+      		<li><a href="">联系我们</a></li>
+      	</ul>
+      	<ul>
+      		<li><p>新闻资讯</p></li>
+      		<li><a href="">公司新闻</a></li>
+      		<li><a href="">媒体报道</a></li>
+      		<li><a href="">金立月刊</a></li>
+      	</ul>
+      	<ul>
+      		<li><p>购物指南</p></li>
+      		<li><a href="">购物流程</a></li>
+      		<li><a href="">支付方式</a></li>
+      		<li><a href="">配送说明及费用</a></li>
+      		<li><a href="">订单管理</a></li>
+      		<li><a href="">购买常见问题</a></li>
+      	</ul>
+      	<ul>
+      		<li><p>售后服务</p></li>
+      		<li><a href="">售后政策</a></li>
+      		<li><a href="">售后服务网点</a></li>
+      		<li><a href="">签收须知</a></li>
+      		<li><a href="">物流查询</a></li>
+      		<li><a href="">建议留言</a></li>
+      	</ul>
+      	<ul>
+      	    <li><p>关于我们</p></li>
+      		<li><a href=""><i class="i_sina"></i>新浪微博</a></li>
+      		<li><a href=""><i class="i_tencent"></i>腾讯微博</a></li>
+      		<li><a href=""><i class="i_QQ"></i>QQ空间</a></li>
+      	</ul>
+      	<div class="scan">
+      		<i></i>
+      		<p>扫一扫关注微信</p>
+      	</div>
+      </div>
+	  <div class="wraps">
+	   <div class="wrap bottom">
+	  	<p><a href="">网站地图</a><span class="v_line">|</span><span class="b_under">集团下属公司<i class="tri"></i><em>欧信通讯<br>奥软网络</em></span></p>
+	  	<div class="licence"><p><span class="lf">增值电信业务经营许可证：</span><a href="">粤B2-20120350</a><a href="">粤ICP备05087105号  </a><a href="">粤网文[2013]029-029号</a><a href="">粤文市审[2012]196号</a></p><a class="lit" href=""><img src="../images/base/a.png"></a><a class="lit" href=""><img src="../images/base/b.png"></a><span class="rf lan"><em>中国/简体中文</em><em class="en">Global/English</em><i class="plus"></i></span></div>
+	  	<p>Copyright © 2016 深圳市金立通信设备有限公司 版权所有 .</p>
+	  </div>
+	  </div>
+	</div>
+	<script> 
+
+		$(document).ready(function(){
+          var pId=window.location.search.replace("?0","")-1;
+          $.get('../js/detail.json', function(data) {
+          	var str="<h2>"+data[pId].phone_name[0]+"</h2><p>"+data[pId].function+"</p><p class='c_price'><em class='fir'>促&nbsp;销&nbsp;价：</em><span>"+data[pId].vision[0].price+"</span></p><div class='info'><p class='c_color'><em class='fir'>颜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;色：</em><span class=''><img src='../images/detail/"+data[pId].color[0]+"'><i class='cur'></i></span><span><img src='../images/detail/"+data[pId].color[1]+"'><i></i></span><span><img src='../images/detail/"+data[pId].color[2]+"'><i></i></span></p><p class='c_vision'><em class='fir'>版&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本：</em><span class=''><b>"+data[pId].vision[0].cap+"</b><i class='cur'></i></span><span><b>"+data[pId].vision[1].cap+"</b><i></i></span></p><p class='c_num'><em class='fir lf'>购买数量：</em><span class='sub'>-</span><input type='text' class='nums lf' value='1'><span class='plus'>+</sapn> <p class='gift clear'>购买"+data[pId].phone_name[0]+"赠送：<i>"+data[pId].gift_1+"</i><i><b>+</b>"+data[pId].gift_2+"</i><i><b>+</b>"+data[pId].gift_3+"</i><i><b>+</b>"+data[pId].gift_4+"</i><i><b>+</b>"+data[pId].gift_5+"</i><i><b>+</b>"+data[pId].gift_6+"</i></p><div class='quick_buy'><p>您已选择：<span>"+data[pId].phone_name[0]+"</span> <span>"+data[pId].phone_name[1]+"</span><span class='p_vision'>"+data[pId].vision[0].cap+"</span><span><em class='p_nums'>1</em>件</span>总计：<span><em class='tol'>0</em>元</span></p><span href='#' class='add_cart'>加入购物车</span><a class='quick_go' href='cart.html'>"+"购买"+"</a></div>"
+          $('.go_buy').html(str)
+          //判断有无相应数据
+          $(function(){
+          $(".gift").find("i").each(function(index, el) {
+
+          	if($(this).text()=="undefined"||$(this).text()=="+undefined")
+          		{$(this).remove()}
+           }); 
+
+              if($(".gift").html()==("购买"+data[pId].phone_name[0]+"赠送：")){
+              
+              	$(".gift").css("visibility","hidden");
+              	// $(".info").h("<p class=gift></p>")
+              }
+          })
+          $(".c_vision").find("span").each(function(index, el) {
+          	console.log($(this).find("b").text()=="")
+          	if($(this).find("b").text()==""){
+          		
+          		$(this).remove();
+          		       		
+          		// console.log($(".c_vision").html());
+           }
+          	if( $(".c_vision").find("span").length==0){
+          		$(".c_vision").remove();
+          		}
+          });
+          $(".quick_buy p span").each(function(index, el) {
+          	   if($(this).html()=="undefined"){
+          	   	$(this).remove();
+          	   }
+          });
+          //点击颜色选择图片添加样式并改变选择描述
+             var a=1;
+			$(".c_color span").click(function(event) {
+                $(this).find("i").addClass('cur')
+				 $(this).siblings().find("i").removeClass("cur");
+                  var index=$(".c_color span").index(this);
+                  
+                    a=index+1;
+                  var str3=data[pId].phone_name[a];
+                   $(".quick_buy span:eq(1)").html(str3)
+				      });
+
+	     //判断小图是否存在
+	     $("img").error(function() {
+	    $(this).parent().remove()
+	         }); 
+
+
+   //点击给版本选择添加样式并改变描述
+         var vision=0;
+            $(".c_vision span").click(function(){
+                var str2=$(this).find("b").html();
+            	$(this).find("i").addClass('cur')
+            	$(this).siblings().find("i").removeClass('cur')
+            $(".quick_buy .p_vision").html(str2);
+            var p1=data[pId].vision[0].price;
+            var p2=data[pId].vision[1].price;
+            if(str2=="64GB"||"32GB"){$(".c_price span").html(p1);$(".quick_buy .tol").html(p1);vision=0;}
+            if(str2=="128GB"){$(".c_price span").html(p2);$(".quick_buy .tol").html(p2);vision=1;}
+            	$(".c_num .nums").val(1)
+                $(".quick_buy .p_nums").html(1);
+                n=1;
+                
+                $(".quick_buy ")
+            //vision=str2;
+
+
+            })
+	      //点击加减改变数量
+     
+       var n=$(".c_num").find("input").val();
+      var m=0;
+       $(".quick_buy .tol").html($(".c_price span").html());
+
+    $(".c_num .sub").click(function(){ 
+   	 m=$(".c_price span").html().replace("￥","")
+   	$(".c_num .limit").remove()
+      	if(n==0){n=1}
+      	n--;
+      $(this).parent().find("input").val(n);
+      $(".quick_buy .tol").html("￥"+m*n);
+      $(".quick_buy .p_nums").html(n)
+      })
+   
+
+      $(".c_num .plus").click(function(){
+      	m=$(".c_price span").html().replace("￥","")
+      	console.log(m)
+      	$(".c_num .limit").remove()
+      	if(n==5){n=4;$(".c_num").append("<span class='limit'>限购5件!</span>")}
+      		n++;
+      	$(this).parent().find("input").val(n);
+      	
+        $(".quick_buy .p_nums").html(n)
+        $(".quick_buy .tol").html("￥"+m*n)
+      })
+
+      
+
+              //加入购物车
+          	
+          $(".add_cart").click(function(){
+          	var num=$(".nums").val();
+          	var total=$(".tol").html();
+          	if(localStorage.getItem("cart")){
+          		  var obj=JSON.parse(localStorage.getItem("cart"))
+                // obj[pId]={"color":a,"num":num,"total":total,"vision":vision};
+              }
+          	else{ var obj={};}
+              obj[pId]={"pId":pId,"color":a,"num":num,"total":total,"vision":vision};
+             var carobj=JSON.stringify(obj);
+             localStorage.setItem("cart",carobj)
+
+            console.log(obj)
+             //var cookieobj=JSON.parse($.cookie("cart"))
+          })
+
+          });
+     
+         
+			var $name=$.cookie("username")
+			if($name){$(".hello").html("hi"+$name+"<a class='mycount' href='#'>我的账户</a>");
+            $(".resg").html("<a class='exit' href='#'>退出</a>") 
+		   }
+			$(".exit").click(function(){
+				
+				$.cookie("username",null,{path:"/",expires:-1});
+               window.location="index.html"
+			})
+
+           $(".s_pics img").each(function(index, el) {
+           	  $(this).mouseover(function() {
+                 $(".b_pics img").eq(4-index).css("display","block").siblings("img").css("display","none")
+                 $(".big_pics img").eq(4-index).css({"zIndex":20}).siblings().css("zIndex",0)
+           	  });
+           });
+           //放大镜
+           //1鼠标移入显示大图及鼠标跟随阴影框
+           $(".b_pics img").each(function(index, el) {
+           	  $(this).mouseover(function(event) {
+           	  $(".pic_shot").show();
+           	
+           	  $(".big_pics").show().css("zIndex","99");
+           	             });
+         
+           $(".b_pics").mousemove(function(e) {
+              
+              var shotLeft=e.pageX-$(this).offset().left-$(".pic_shot").outerWidth()/2;
+              var shotTop=e.pageY-$(this).offset().top-$(".pic_shot").outerHeight()/2;
+
+                if(shotLeft<0){shotLeft=0}
+                 if(shotLeft>$(this).outerWidth()-$(".pic_shot").outerWidth()){
+                 	shotLeft=$(this).outerWidth()-$(".pic_shot").outerWidth()}
+                 	 if(shotTop>$(this).outerHeight()-$(".pic_shot").outerHeight()){
+                 	shotTop=$(this).outerHeight()-$(".pic_shot").outerHeight()}
+              	 if(shotTop<0){shotTop=0}
+              		$(".pic_shot").css({"left":shotLeft,"top":shotTop})
+              	//让大图移动
+              	// var persentY=shotTop/($(this).outerHeight()-$(".pic_shot").outerHeight())
+              	// console.log(persentY)
+
+              
+              	$(".big_pics img").css({"left":-2*shotLeft,"top":-2.7*shotTop})
+           });
+           // 	;mouseover(function(event) {
+           // 	  $(".b_pics img").css("display","block").siblings().css("display","none")
+           // });
+           });
+             $(".b_pics").mouseleave(function() {
+                   	  $(".pic_shot").hide();
+           	          $(".big_pics").hide();
+             })
+
+     
+         
+})
+	</script>
+</body>
+</html>

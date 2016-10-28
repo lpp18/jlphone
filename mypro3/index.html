@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/base.css" type="text/css">
+	<link rel="stylesheet" href="css/main.css" type="text/css"> 
+	<link rel="stylesheet" href="css/layout.css" type="text/css"> 
+	<script src="js/jquery_1.11.3.min.js"></script>
+	<script src="js/main.js "></script>
+	<script src="js/jquery.cookie.js"></script>
+   <style>
+   	.login .mycount{color:red;}
+   </style>
+</head>
+<body>
+	
+		<div class="top">
+		    <div  class="ask">
+		    	<div class="online">
+		    		<a href="#"></a>
+		    		<span><a href="#">在线服务</a></span>
+		    	</div>
+		    	<div class="help">
+		    		<a href="#"></a>
+		    		<span><a href="#">帮助中心</a></span>
+		    	</div>
+		    	<div class="backtop">
+		    		<a href="#"></a>
+		    		<span><a href="#top">返回顶部</a></span>
+		    	</div>
+		    </div>
+			<a class="logo lf" href="#"></a>
+			<div class="login"><a class="hello" href="html/login.html">你好，请登录</a><span>|</span><a class="resg" href="html/register.html">注册</a><a class="cart_0" href="#">购物车<b id="cartnum">(0)</b></a></div>
+			<div class="top_nav rf">
+				<ul>
+					<li><a href="#" id="top">首页</a></li>
+					<li class="phone"><a href="html/phone.html">手机</a>
+                       <div>
+                       	<ul>
+                       	    <li><h3><a href="#">最新</a></h3></li>
+                       		<li><a href="#">金立M6</a></li>
+                       		<li><a href="#">金立M6</a></li>
+                       		<li><a href="#">金立M6Plus</a></li>
+                       		<li><a href="#">金立M6Plus</a></li>
+                       	</ul>
+                       	<ul>
+                       	    <li><h3><a href="#">M系列</a></h3></li>
+                       		<li><a href="#">金立大金刚</a></li>
+                       		<li><a href="#">金立大金刚</a></li>
+                       		<li><a href="#">金立大金刚</a></li>
+                       		<li><a href="#">金立大金刚</a></li>
+                       	</ul>
+                       	<ul>
+                       	    <li><h3><a href="#">S系列</a></h3></li>
+                       		<li><a href="#">金立S5</a></li>
+                       		<li><a href="#">金立S5</a></li>
+                       		<li><a href="#">金立S5</a></li>
+                       		
+                       	</ul>
+                       	<ul>
+                       	    <li><h3><a href="#">金刚系列</a></h3></li>
+                       		<li><a href="#">金刚全网通(32GB+128GB)</a></li>
+                       		<li><a href="#">金刚全网通(32GB+128GB)</a></li>
+                       		<li><a href="#">金刚全网通(32GB+128GB)</a></li>
+                       		<li><a href="#">金刚全网通(32GB+128GB)</a></li>
+                       	</ul>
+                       	<ul>
+                       	    <li><h3><a href="#">天鉴系列</a></h3></li>
+                       		<li><a href="#">天鉴W900S(32GB+64GB)</a></li>
+                       		<li><a href="#">天鉴W900S(32GB+64GB)</a></li>
+                       		<li><a href="#">天鉴W900S(32GB+64GB)</a></li>
+                       		<li><a href="#">天鉴W900S(32GB+64GB)</a></li>
+                       	</ul>
+                       		<ul>
+                       	    <li><h3><a href="#">F系列</a></h3></li>
+                       		<li><a href="#">金立F110公开版</a></li>
+                       		<li><a href="#">金立F110公开版</a></li>
+                       		<li><a href="#">金立F110公开版</a></li>
+                       		<li><a href="#">金立F110公开版</a></li>
+                       	</ul>
+                       </div>
+					</li>
+					<li><a href="#">配件</a></li>
+					<li><a href="#">服务</a></li>
+					<li><a href="#">下载</a></li>
+					<li><a href="#">社区</a></li>
+					<li><a href="#">amigoOS</a></li>
+					<form class="rf" action=""><input class="txt" type="text" placeholder="输入搜索内容"/><input type="button" id="btn"/></form>
+				</ul>
+			</div>
+		</div>
+	<div class="wrap">
+		<!---轮播图-->
+		<div id="loop">
+			<ul class="pics">
+				
+			</ul>
+			<ul class="opt">
+				
+			</ul>
+			<div id="prev"></div>
+			<div id="next"></div>  
+		</div>
+		<!-- 选购手机.精美配件.热销产品 -->
+			<ul class="mid_nav">
+				<li class="mobile"><a href="html/phone.html"><a href="html/phone.html"><img src="images/main/12_1473675737769.jpg" alt=""></a><i></i></a></li>
+				<li class="accessories"><a href="#"><img src="images/main/19_1471595706931.jpg" alt=""></a><i></i></li>
+				<li class="sale"><a href="#"><img src="images/main/22_1456138147391.jpg" alt=""></a><i></i></li>
+			</ul>
+	</div>
+	<!-- 图片滑动区 -->
+	<div>
+		<ul class="slide_pics wrap">
+			<li class="fir"><img src="images/main/ss3.jpg"><a href=""><img src="images/main/s1.jpg" alt=""></a></li>
+			<li class="sec"><img src="images/main/ss2.jpg"><a href=""><img src="images/main/s2.jpg" alt=""></a></li>
+			<li class="thr"><img src="images/main/ss1.jpg"><a href=""><img src="images/main/s3.jpg" alt=""></a></li>
+			<li class="fou"><img src="images/main/ss4.jpg"><a href=""><img src="images/main/s4.jpg" alt=""></a></li>
+		</ul>
+	</div>
+	<div class="line2"></div>
+	<div class="wrap boutique">
+		
+		<ul class="phones">
+			 <li class="fir super">
+			      <a class="lf" href="">精品手机</a>
+			      <div class="jp">
+			      	<div class="pic1"><a href=""><img src="images/main/j1.jpg" alt=""></a></div>
+			      	<div class="pic2 fir"><a href=""><img src="images/main/j2.jpg" alt=""></a></div>
+			      	<div class="pic3 fir"><a href=""><img src="images/main/j3.jpg" alt=""></a></div>
+			      	<div class="pic4 two"><a href=""><img src="images/main/j4.jpg" alt=""></a></div>
+			      	<div class="pic5 two"><a href=""><img src="images/main/j5.jpg" alt=""></a></div>
+			      </div>
+			</li>
+		   
+			<li class="last"><a class="last1" href="">全部手机<i></i></a></li>
+			<li class="super">
+			    <a href="">天鉴系列</a>
+			    <div class="super_t">
+			    	
+			    </div>
+			</li>
+			<li class="super">
+			    <a href="">S系列</a>
+			    <div class="super_s">
+			    	
+			    </div>
+			</li>
+			<li class="super">
+			    <a href="">F系列</a>
+			    <div class="super_f">
+			    	
+			    </div>
+			</li>
+			<li class="super">
+			    <a href="">超级续航</a>
+			    <div class="super_p">
+			    	
+			    </div>
+			</li>
+			<div class="bord clear"></div>
+		</ul>
+	</div>
+
+<!-- 精美配件 -->
+<div class="wrap boutique">
+		
+		<ul class="phones">
+			 <li class="fir super">
+			      <a class="lf" href="">精美配件</a>
+			      <div class="jp">
+			      	<div class="pic1 pj1 fir"><a href=""><img src="images/main/p1.jpg" alt=""></a></div>
+			      	<div class="pic2 fir"><a href=""><img src="images/main/p6.jpg" alt=""></a></div>
+			      	<div class="pic3 fir"><a href=""><img src="images/main/p3.jpg" alt=""></a></div>
+			      	<div class="pic4 pj two"><a href=""><img src="images/main/p5.jpg" alt=""></a></div>
+			      	<div class="pic5 two"><a href=""><img src="images/main/p4.jpg" alt=""></a></div>
+			      	<div class="pic6 two"><a href=""><img src="images/main/p2.jpg" alt=""></a></div>
+			    
+			      </div>
+			</li>
+		   
+			<li class="last"><a class="last1" href="">全部配件<i></i></a></li>
+	
+			<li class="super">
+			    <a href="">耳机/自拍杆</a>
+			    <div class="super_s">
+			    	
+			    </div>
+			</li>
+			<li class="super">
+			    <a href="">保护壳/贴膜</a>
+			    <div class="super_f">
+			    	
+			    </div>
+			</li>
+			<li class="super">
+			    <a href="">充电器/数据线</a>
+			    <div class="super_p">
+			    	
+			    </div>
+			</li>
+			<div class="bord clear"></div>
+		</ul>
+	</div>
+
+	<div class="hot">
+		 <div class="jp">
+				      	<div class="pic1"><a href=""><img src="images/main/h1.jpg" alt=""></a></div>
+				      	<div class="pic2"><a href=""><img src="images/main/h2.jpg" alt=""></a></div>
+				      	<div class="pic3 fir"><a href=""><img src="images/main/h3.jpg" alt=""></a></div>
+				      	<div class="pic4 two"><a href=""><img src="images/main/h4.jpg" alt=""></a></div>
+				      	<div class="pic5 two"><a href=""><img src="images/main/h5.jpg" alt=""></a></div>
+				      </div>
+	</div>
+
+	<div class="footer clear">
+	  <div class="wrap">
+		<a href="#">
+			<i class="i_guarantee"></i>
+			<span>7天<br/>退货保障</span>
+		</a>
+		<a href="#">
+			<i class="i_promise"></i>
+			<span>30天<br/>退货承诺</span>
+		</a>
+		<a href="#">
+			<i class="i_free"></i>
+			<span>99元起<br/>全场免运费</span>
+		</a>
+		<a href="#">
+			<i class="i_after"></i>
+			<span>579家<br/>售后服务点</span>
+		</a>
+	 </div>
+		<div class=line2></div>
+      <div class="wrap after">
+      	<ul>
+      		<li><p>关于金立</p></li>
+      		<li><a href="">企业荣誉</a></li>
+      		<li><a href="">金立体验店</a></li>
+      		<li><a href="">代理商专区</a></li>
+      		<li><a href="">加入金立</a></li>
+      		<li><a href="">联系我们</a></li>
+      	</ul>
+      	<ul>
+      		<li><p>新闻资讯</p></li>
+      		<li><a href="">公司新闻</a></li>
+      		<li><a href="">媒体报道</a></li>
+      		<li><a href="">金立月刊</a></li>
+      	</ul>
+      	<ul>
+      		<li><p>购物指南</p></li>
+      		<li><a href="">购物流程</a></li>
+      		<li><a href="">支付方式</a></li>
+      		<li><a href="">配送说明及费用</a></li>
+      		<li><a href="">订单管理</a></li>
+      		<li><a href="">购买常见问题</a></li>
+      	</ul>
+      	<ul>
+      		<li><p>售后服务</p></li>
+      		<li><a href="">售后政策</a></li>
+      		<li><a href="">售后服务网点</a></li>
+      		<li><a href="">签收须知</a></li>
+      		<li><a href="">物流查询</a></li>
+      		<li><a href="">建议留言</a></li>
+      	</ul>
+      	<ul>
+      	    <li><p>关于我们</p></li>
+      		<li><a href=""><i class="i_sina"></i>新浪微博</a></li>
+      		<li><a href=""><i class="i_tencent"></i>腾讯微博</a></li>
+      		<li><a href=""><i class="i_QQ"></i>QQ空间</a></li>
+      	</ul>
+      	<div class="scan">
+      		<i></i>
+      		<p>扫一扫关注微信</p>
+      	</div>
+      </div>
+	  <div class="wraps">
+	   <div class="wrap bottom">
+	  	<p><a href="">网站地图</a><span class="v_line">|</span><span class="b_under">集团下属公司<i class="tri"></i><em>欧信通讯<br>奥软网络</em></span></p>
+	  	<div class="licence"><p><span class="lf">增值电信业务经营许可证：</span><a href="">粤B2-20120350</a><a href="">粤ICP备05087105号  </a><a href="">粤网文[2013]029-029号</a><a href="">粤文市审[2012]196号</a></p><a class="lit" href=""><img src="images/base/a.png"></a><a class="lit" href=""><img src="images/base/b.png"></a><span class="rf lan"><em>中国/简体中文</em><em class="en">Global/English</em><i class="plus"></i></span></div>
+	  	<p>Copyright © 2016 深圳市金立通信设备有限公司 版权所有 .</p>
+	  </div>
+	  </div>
+	</div>
+	<script>
+		$(document).ready(function(){
+          
+			var $name=$.cookie("username")
+			if($name){$(".hello").html("hi"+$name+"<a class='mycount' href='#'>我的账户</a>");
+            $(".resg").html("<a class='exit' href='#'>退出</a>") 
+		   }
+			$(".exit").click(function(){
+				
+				// $.cookie("username",null,{path:"/",expires:-1});
+    //            window.location="index.html"
+			})
+
+
+})
+	</script>
+</body>
+</html>

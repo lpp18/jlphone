@@ -1,0 +1,18 @@
+li{list-style: none;}
+	body,li,ul,h3,h2,h1,p,dl,dd,input{margin:0;padding:0;}
+	.clearfix:after{
+		content:"";
+        clear: both;
+       overflow: hidden;
+       height:0;
+       display:block;
+	}
+	li{list-style: none;}
+	input{outline:none;border:none;}
+	a{color:#333;
+		text-decoration: none;}
+	
+	.lf{float:left;}
+	.rf{float:right;}
+	.clear{clear:both;}
+	img{border:0;}

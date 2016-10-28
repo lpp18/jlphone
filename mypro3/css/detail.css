@@ -1,0 +1,57 @@
+ /*详情页*/
+ /*放大镜*/
+  .detail{width:1190px;margin:130px auto;}
+ .detail .b_pics>img{width:350px;height:350px;position: absolute;}
+ .detail .show_pic{width:350px;background:#fff;border:1px solid #aaa;position: relative;height:auto;float:left;}
+ .detail .show_pic .pic_shot{width:200px;height:200px;position:absolute;z-index: 20;
+ 	display:none;background:#fede4f ;filter:alpha(opacity=50);opacity: .5;}
+ .detail .b_pics{width:350px;height:350px;overflow:hidden;}
+  .detail .s_pics{width:325px;height:60px;margin:20px auto;}
+ .detail .s_pics li{float:left;width:50px;height:50px;padding:3px;border:2px solid #ccc;margin-right: 5px;}
+.detail .s_pics li img{width:50px;height:50px;}
+.detail .big_pics{width:400px;height:400px;position: absolute;left:400px;top:0;overflow: hidden;display: none;}
+.detail .big_pics img{position: absolute;left:0;top:0;}
+/*立即购买*/
+.go_buy{width:750px;float:right;}
+.go_buy .c_color{height:50px;border-top: 1px dashed #d0d0d0;}
+.go_buy .c_color img{width:35px;height:35px;display: block;}
+.go_buy .c_color span{display: inline-block;position: relative;top:15px;}
+.go_buy .c_color span i{position: absolute;left:0;bottom:0;width:31px;height:31px;z-index: 4;}
+.go_buy h2{font-size: 24px;line-height: 32px;font-weight: normal;padding:0 0 5px;}
+.go_buy h2+p{font-size: 14px;color: #999;padding-bottom: 8px;line-height: 25px;border-bottom: 1px dashed #d0d0d0;min-height: 42px;}
+.go_buy p{font: 12px/1.5;color:#000;}
+.go_buy .c_price span{font-style:normal;color:#ef4222;font:bolder 24px/30px 黑体;}
+.go_buy em.fir{margin-right: 25px;line-height:24px;font-style:normal;
+	width:72px;display: inline-block;text-align: justify;}
+.go_buy .gift{background:#FFF8D8;line-height: 38px;padding-left: 25px;}
+.go_buy .info{overflow: hidden;}
+.go_buy .info span{margin-right: 5px;margin-bottom: 1px solid transparent;}
+.go_buy p{margin-bottom: 10px;}
+.go_buy .c_vision span{font-size:12px;display: inline-block;width:60px;height: 20px;position: relative;
+	background:#fff;line-height: 20px;text-align: center;}
+.go_buy .c_vision i{position: absolute;left:0;bottom:0;width:56px;height:16px;z-index: 4;} 
+.go_buy .c_vision b{font-weight: normal;}
+/*点击要添加的样式*/
+   .cur{border:2px solid #ef4222;background:url(../images/base/vi_attribute.png) right bottom no-repeat;z-index: 5;}
+
+.go_buy .c_num{overflow: hidden;}
+.go_buy .c_num span{display: inline-block;border:1px solid #aaa;;
+	text-align:center;height:24px;background: #fff;float:left;}
+.go_buy .c_num .nums{width:50px;height:24px;border:1px solid #aaa;margin-right: 5px;text-align: center;}
+.go_buy .c_num .limit{border:none;color:red;background: #ddd;}
+.go_buy .c_num span.sub,.go_buy .c_num span.plus{width:24px;cursor: pointer;}
+.go_buy p.gift{margin-top:20px;margin-bottom: 60px;}
+.go_buy p.gift i{font-style: normal;}
+
+.quick_buy{margin-top: 30px;}
+.quick_buy span{color: #ef4222;margin-right: 5px;}
+.quick_buy .add_cart{width:142px;height:50px;cursor:pointer;background: red;border-radius: 5px;
+	margin-right: 20px;display: inline-block;font-size: 20px;float: left;line-height: 50px;text-align: center;color: #fff;}
+.quick_buy .add_cart:hover{background: orange;}
+.quick_buy a.quick_go{display: inline-block;width:142px;height:50px;text-indent:-999px;
+	background:url(../images/base/newpartlst.png) left -24px no-repeat;float: left;}
+.quick_buy a.quick_go:hover{background-position: -142px -24px;}
+.quick_buy em{font-style:normal;}
+.quick_buy em.tol{display: inline-block;width:45px;text-align: center;}
+
+
